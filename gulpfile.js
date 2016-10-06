@@ -15,5 +15,9 @@ require('laravel-elixir-vue-2'); //No es obligratoria si no s'utilitza vue
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .webpack('app.js')
+        .browserSync({
+        proxy: 'http://localhost:63342/TemplateElixirAssets/public'
+    });
+;
 });

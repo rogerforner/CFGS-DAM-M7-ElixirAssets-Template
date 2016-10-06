@@ -1,1 +1,1 @@
-console.log("Hola món!");
+console.log("Hola gent com esteu!");
